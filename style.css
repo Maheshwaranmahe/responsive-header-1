@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;    
+}
+header {
+    position: relative;
+    top: 0;
+    width: 1205px;
+    height: 80px;
+    background-color: RED;
+}
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    top: 20px;
+}
+.logo a {
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+}
+.navbar{
+    width: 68%;
+    height: 80px;
+    background: #1f1d47;
+    text-align: center ;
+    cursor: pointer;
+}
+.navbar ul a{
+    display: block;
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.navbar ul{
+    display: flex;
+    margin-left: 15%;
+}
+#menuToggle {
+    display: none;
+}
+.menubar {
+    display: none;
+}
+
+
+@media (max-width:576px){
+    .navbar {
+        width: 100%;
+        height: auto;
+}
+.navbar ul {
+    width: 100%;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+}  
+.navbar ul a {
+    text-align: center;
+    height: 50px;
+    background-color: grey;
+    top: 10%;
+}
+.menubar {
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: -10%;
+    line-height: 60px;
+}
+header .navcontainer .navbar ul a:hover{
+    background-color: gold;
+    color: black;
+}
+#menuToggle:checked ~ ul{
+    max-height: 400px;
+}
+.menubar i {
+    font-size: 30px;
+}
+}
